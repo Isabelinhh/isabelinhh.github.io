@@ -1,0 +1,245 @@
+:root {
+    --primary: #6a0dad;
+    --dark: #1e1e2f;
+    --light: #f5f5f5;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #d6b3ff;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: white;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* SOBRE */
+.about {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+   
+}
+
+/* PROJETOS */
+.projects {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: var(--light);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #d6b3ff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.curso {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 30px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Cor da tecnologia */
+.dot.css {
+  background-color: #734fc5; /* amarelo */
+}
+
+.dot.html {
+  background-color: #ecdf24; /* amarelo */
+}
+
+.dot.java {
+  background-color: #ec9c24; /* amarelo */
+}
+
+.tech-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.link-whatsapp img{
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+   
+.tech-list {
+  display: flex;
+  flex-wrap: wrap; /* quebra linha se faltar espaço */
+  gap: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;
+}
+
+.tech {
+   
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+/* cores individuais (opcional, mas fica top) */
+.tech.html {
+  background-color: #7dd3fc;
+  
+}
+
+.tech.css {
+  background-color: #7dd3fc;
+  
+}
+
+.tech.js {
+  background-color: #7dd3fc;
+}
+
+.tech.figma {
+  background-color: #7dd3fc;
+  color: rgb(26, 23, 23);
+}
+
+.tech.flutter {
+  background-color: #7dd3fc;
+}
+
